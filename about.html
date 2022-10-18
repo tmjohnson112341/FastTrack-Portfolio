@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Thasadith&display=swap');</style>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div id='preloader'></div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navLink">
+            <a href="index.html" >Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/resume.pdf" download>Resume</a>
+            <div class="logos">
+                <a href="https://www.linkedin.com/in/tmjsoftwareengineer/" target="_blank"> <i class='fa fa-linkedin'></i></a>
+                <a href="https://github.com/tmjohnson112341" target="_blank"><i class='fa fa-github'></i></a>
+                <a href="mailto:tmjohnson112341@gmail.com" target="_blank"><i class='fa fa-envelope-open'></i></a>
+                 </div>
+            </div>
+          </div>
+        <div onclick="openNav()" class="button">&#9776</div>
+        <div class="container">  
+        <div class="imageCard">
+            <div class="hiddenMessage">
+            <p class="hmtitle">Personal Facts</p>
+            <p>I love animals!</p>
+            <p>I have 2 cats, 2 sugar gliders, and a bunch of fish.</p>
+            <p>I'm passionate about the environment.</p>
+            <p>I'm a twin!</p>
+            </div>
+            <img id="image" >
+            <p id="bio"></p>
+            <p id="hireable"></p>   
+        </div>
+        <div class="about">
+        <h1 class="aboutTitle">About Me</h1> 
+        <p>My name is Tina Johnson and though I grew up in Georgia, I now live in Jacksonville Florida.</p>
+        <p>I originally got my associates degree in Baking and Pastry and I have spent the last 10 years </p>
+        <p>as a Pastry Chef specializing in those large custom event cakes like you see on T.V. I made the </p>
+        <p>decision in early 2021 that I was ready to change careers and I knew almost immediately that I </p>
+        <p>wanted to go back to school for computer science because I was raised by my grandparents, </p>
+        <p>and my Grandfather has been in IT basically since it has existed. He still loves his job even though</p>
+        <p>he's retired so I wanted to follow in his footsteps and went back to school. I am currently attending</p>
+        <p>The University of the people for my Bachelors of Computer Science and I hope to graduate in 2024.</p>
+        <p>In the meantime I have just graduated from the Thinkful full immersion software engineering bootcamp</p>
+        <p>where I completed several projects using JavaScript, HTML, CSS, React, PostgreSQL, and knex. I have</p>
+        <p>also been attending the FastTrack Java developer program where I have additionally been learning Java</p>
+        <p>JPA, and Spring Boot. I am now looking foward to using my new skills to gain some real industry experience.</p>
+        </div>
+        </div>
+    </div>
+    <script>
+    let image = document.getElementById('image')
+    let bio = document.getElementById('bio')
+    let hireable = document.getElementById('hireable')
+
+    fetch('https://api.github.com/users/tmjohnson112341')
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data)
+        image.src = data.avatar_url
+        bio.innerHTML = data.bio
+
+        if((data.hireable == null)){
+            data.hireable = "Hireable"
+            hireable.innerHTML = data.hireable
+        }
+    })
+    
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "400px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+</body>
+</html>

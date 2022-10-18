@@ -1,0 +1,142 @@
+body{
+    font-family: "Thasadith";
+    font-weight: bold;
+    background-color: #FBEEEB;
+    background-image: url(assets/aboutBG.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0;
+}
+
+#preloader{
+    background: #FFF3E1 url('assets/plant.gif') no-repeat center;
+    height:100%;
+    width:100%;
+    position: fixed; 
+    z-index: 100;
+    animation: disappear .4s linear 2.8s forwards;
+  }
+  
+  @keyframes disappear {
+    from {z-index: 100; opacity: 1;}
+    to {z-index:-100; opacity: 0;}
+    
+  }
+
+.button{
+    display: flex;
+    justify-content: end;
+    margin-right: 2vh;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-family: "Sacramento";
+    font-size: 80px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10vh;
+}
+.card{
+    border: solid;
+    width: 30vh;
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 0.262);
+    backdrop-filter: blur(5px);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.card img{
+    overflow: hidden;
+    width: 30vh;
+    border-bottom: 2px solid black;
+    margin-bottom: -2vh;
+}
+.card h3{
+    text-align: center;
+}
+
+.card p{
+    display: flex;
+    justify-content: center;
+}
+.technologies{
+    font-size: 12px;
+    text-align: center;
+    line-height: 2vh;
+}
+.card a{
+    letter-spacing: .2vh;
+    text-decoration: none;
+    color: black;
+    transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+.card a:hover{
+    color: #fff;
+  box-shadow: inset 220px 0 0 0 #2faf2879
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    margin-top: -1vh;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background:url(/assets/sidebarBG.png);
+    background-size: cover;
+    background-position: top;
+    filter: drop-shadow(0px 0px 10px black);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    margin-top: 2vh;
+    letter-spacing: .5vh;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: rgb(30, 81, 1);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .navLink{
+    margin-left: 15vh;
+    margin-top: 30vh;
+  }
+
+  .logos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    margin-left: -1vh;
+  }

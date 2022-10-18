@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Thasadith&display=swap');</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id='preloader'></div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="navLink">
+            <a href="index.html" >Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/resume.pdf" download>Resume</a>
+            <div class="logos">
+           <a href="https://www.linkedin.com/in/tmjsoftwareengineer/" target="_blank"> <i class='fa fa-linkedin'></i></a>
+           <a href="https://github.com/tmjohnson112341" target="_blank"><i class='fa fa-github'></i></a>
+           <a href="mailto:tmjohnson112341@gmail.com" target="_blank"><i class='fa fa-envelope-open'></i></a>
+            </div>
+            </div>
+          </div>
+        <div onclick="openNav()" class="button">&#9776</div>
+        <div class="project">
+            <h1 class="title" >Projects</h1>
+         </div> 
+         <div class="container"> 
+        <div class="cards">
+                <div class="card">
+                    <img src="assets/RestaurantReservation.png">
+                    <h3><a href ="https://github.com/tmjohnson112341/Restaurant-Reservation" target="_blank">Restaurant Reservation</a></h3>
+                    <p class="technologies">React.js, JSX, HTML, CSS, Bootstrap, Expressjs</p>
+                    <p class="technologies">Node.js, Git, Heroku, PostgreSQL</p>
+                </div>
+                <div class="card">
+                    <img src="assets/portfolio.PNG">
+                    <h3><a href ="https://portfolio-webpage-private.vercel.app/" target="_blank">React Portfolio</a></h3>
+                    <p class="technologies">React.js, JSX, HTML, CSS, Tailwind</p>
+                    <p class="technologies">GetForm.io, Google Fonts </p>
+                </div>
+                <div class="card">
+                    <img src="assets/toDoListBase.png">
+                    <h3><a href ="https://github.com/tmjohnson112341/ToDo-List" target="_blank">To Do List</a></h3>
+                    <p class="technologies">React.js, JSX, HTML, CSS, Google Fonts </p>
+                </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/social.PNG">
+                <h3><a href ="https://github.com/tmjohnson112341/Social-Media-Api" target="_blank">Social Media Api</a></h3>
+                <p class="technologies">Java, JPA, Spring, Spring Boot, PostgreSQL, Postman </p>
+            </div>
+            <div class="card">
+                <img src="assets/quiz.PNG">
+                <h3><a href ="https://github.com/tmjohnson112341/quiz-api" target="_blank">Quiz Api</a></h3>
+                <p class="technologies">Java, Jpa, Spring, Spring Boot, PostgreSQL, Postman </p>
+            </div>
+            <div class="card">
+                <img src="assets/bnb.PNG">
+                <h3><a href ="https://github.com/tmjohnson112341/Thinkfulbnb" target="_blank">BnB</a></h3>
+                <p class="technologies">JS, Bootstrap, HTML, CSS </p>
+            </div>  
+    </div>
+        </div>  
+    </div>
+</body>
+<script>
+     function openNav() {
+        document.getElementById("mySidenav").style.width = "400px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+</html>

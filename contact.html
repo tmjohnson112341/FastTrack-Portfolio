@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Thasadith&display=swap');</style>
+</head>
+<body>
+    <div>
+
+        <div id="wrapper">
+            <div id='preloader'></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="navLink">
+                <a href="index.html" >Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="assets/resume.pdf" download>Resume</a>
+                <div class="logos">
+                    <a href="https://www.linkedin.com/in/tmjsoftwareengineer/" target="_blank"> <i class='fa fa-linkedin'></i></a>
+                    <a href="https://github.com/tmjohnson112341" target="_blank"><i class='fa fa-github'></i></a>
+                    <a href="mailto:tmjohnson112341@gmail.com" target="_blank"><i class='fa fa-envelope-open'></i></a>
+                     </div>
+                </div>
+              </div>
+            <div onclick="openNav()" class="button">&#9776</div>
+            <h1 class="title">Contact Me</h1>
+            <div class="container">
+            <form action="https://getform.io/f/e5774743-7a18-4ced-84e0-f06c5d2fe611" method="POST" class="form">
+                <input type="text" name="name" placeholder="name" class="field info" required>
+                <input type="email" name="email" placeholder="email" class="field info" required>
+                <textarea name='message' rows='10' placeholder='message' class="field message" required></textarea>
+                <button type="submit" class="field send">Send</button>
+              </form>
+            </div>
+        </div>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "400px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+        
+    </div>
+</body>
+</html>

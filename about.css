@@ -1,0 +1,161 @@
+body{
+  margin: 0;
+}
+#preloader{
+  background: #FFF3E1 url('assets/plant.gif') no-repeat center;
+  height:100%;
+  width:100%;
+  position: fixed; 
+  z-index: 100;
+  animation: disappear .4s linear 2.8s forwards;
+}
+
+@keyframes disappear {
+  from {z-index: 100; opacity: 1;}
+  to {z-index:-100; opacity: 0;}
+  
+}
+
+body{
+    font-family: "Thasadith";
+    font-weight: bold;
+    background-color: #FBEEEB;
+    background-image: url(assets/aboutBG.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10vh;
+    margin-left: 15vh;
+    margin-top: 10vh;
+}
+
+.imageCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: .75px; 
+    background-color: rgba(255, 255, 255, 0.511);
+    padding: 1vh;
+    backdrop-filter: blur(4px);
+    height: 40%;
+}
+
+#image{
+-webkit-box-shadow: -2px 7px 40px 2px rgba(0,0,0,0.49);
+-moz-box-shadow: -2px 7px 40px 2px rgba(0,0,0,0.49);
+box-shadow: -2px 7px 40px 2px rgba(0,0,0,0.49);
+-webkit-transition: all ease-in-out 500ms;
+-moz-transition: all ease-in-out 500ms;
+-o-transition:all ease-in-out 500ms;
+transition: all ease-in-out 500ms;
+ opacity: 1.0;
+transition: opacity .55s ease-in-out;
+-moz-transition: opacity .55s ease-in-out;
+-webkit-transition: opacity .55s ease-in-out;
+}
+
+#image:hover {
+opacity: 0;
+transition: opacity 1s ease-in-out;
+-moz-transition: opacity 1s ease-in-out;
+-webkit-transition: opacity 1s ease-in-out;
+}
+
+.aboutTitle{
+    display: flex;
+    justify-content: center;
+    font-family: "Sacramento";
+    font-size: 80px;
+    margin-left: -7vh;
+    margin-bottom: -2vh;
+    margin-top: -5vh;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.374);
+    padding: 1vh;
+    letter-spacing: .05vh;
+}
+.hiddenMessage{
+  position: absolute;
+  z-index: -1;
+  text-align: center;
+  line-height: 4vh;
+  margin-top: 2vh;
+}
+.hmtitle{
+  font-family: "Sacramento";
+  font-size: 5vh;
+}
+.button{
+    display: flex;
+    justify-content: end;
+    margin-right: 2vh;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    margin-top: -1vh;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background:url(/assets/sidebarBG.png);
+    background-size: cover;
+    background-position: top;
+    filter: drop-shadow(0px 0px 10px black);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    margin-top: 2vh;
+    letter-spacing: .5vh;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: rgb(30, 81, 1);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .navLink{
+    margin-left: 15vh;
+    margin-top: 30vh;
+  }
+  
+  .logos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    margin-left: -1vh;
+  }
