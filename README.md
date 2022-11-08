@@ -1,8 +1,6 @@
 # Fast Track Portolio
 A simple portfolio webpage.
 
-Project Prompt:
-
 ## Technology
 
 - HTML, CSS, JS, Git, Vercel, GetForm.io, and Google Fonts
